@@ -108,6 +108,7 @@ int main(){
 			}
 		}
 	}
+	XFreeGC(dpy,gc);
 	XCloseDisplay(dpy);
 	if(!*buf)return 0;//empty string
 	strcat(buf,"&");
